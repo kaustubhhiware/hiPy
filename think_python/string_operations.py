@@ -44,7 +44,13 @@ ana
 >>>fruit[:3]
 ban
 
+fruit[0:5:2] => 2 means scan size
+
+fruit[::-1] => reverse
+
+
 """
+
 print 'New strings from old ones'
 greeting = 'Hello , World!'
 print greeting
@@ -61,5 +67,25 @@ if find(inp_str,leter)==-1:
 else:
 	print 'a at index ',find(inp_str,leter) 
 
+print '\ninput capitalised : ',inp_str.upper()
 
 
+"""
+default find function
+
+string.find('a') =>first occurence
+.find('substring')
+.find(str,start_from)
+.find(str,start_from,end_at)
+
+"""
+
+print '\nIs a in input ? ','a' in inp_str
+
+#check alphabetical order
+if inp_str < 'banana':
+	print '\ninput comes before banana'
+else:
+	print '\ninput comes after banana'
+
+#continue to rot13.py
