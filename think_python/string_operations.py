@@ -88,4 +88,4 @@ if inp_str < 'banana':
 else:
 	print '\ninput comes after banana'
 
-#continue to rot13.py
+#continue to rotate.py
