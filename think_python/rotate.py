@@ -16,7 +16,7 @@ def rotate_letter(letter, n):
     return chr(i)
 
 
-def rotate_word(word, n,encode_bool):
+def rotate_word(word, n,encode_bool=True):
     """
         Rotate a word by n places.
 
@@ -51,5 +51,5 @@ if __name__ == '__main__':
             print '\nDecoded string : ',rotate_word(inp_str,int(rot_id),encode_bool)
 
 
-print 'id = 13 , decode this one ;)'
-print 'yngre ubzvr'
+    print 'id = 13 , decode this one ;)'
+    print 'yngre ubzvr'

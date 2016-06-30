@@ -69,6 +69,31 @@ def has_duplicates(listed):
 	return False
 
 
+def has_duplicates1(t):
+    """Checks whether any element appears more than once in a sequence.
+
+    Simple version using a for loop.
+
+    t: sequence
+    """
+    d = {}
+    for x in t:
+        if x in d:
+            return True
+        d[x] = True
+    return False
+
+
+def has_duplicates2(t):
+    """Checks whether any element appears more than once in a sequence.
+
+    Faster version using a set.
+
+    t: sequence
+    """
+    return len(set(t)) < len(t)
+
+
 def remove_duplicates(listed):
 	"""
 		remove all duplicates
