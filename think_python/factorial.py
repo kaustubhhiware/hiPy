@@ -10,3 +10,11 @@ def factorial(n):
 		prev=factorial(n-1)
 		result=prev*n
 		return result
+
+x = raw_input("Enter the number whose factorial is needed : ")
+try:
+	x = int(x)
+	print x,'! = ',factorial(x)
+except ValueError:
+	print("Oops!  That was no valid number.  Try again...")
+
